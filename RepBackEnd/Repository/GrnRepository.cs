@@ -32,7 +32,12 @@ namespace RepBackEnd.Repository
 
         }
 
-
+        public static dynamic GetMR(int MRID)
+        {
+            SqlParameter param = new SqlParameter("MRID", MRID);
+            SQLDAL.ConnectionString = conn;
+            return SQLDAL.ReturnDataTableByProcedure("[dbo].[MaterialRequest]", param);
+        }
 
     }
 }

@@ -57,6 +57,7 @@ namespace CrystalReport
             {
                 Prep rep = new Prep();
                 SqlConnection cn = new SqlConnection(conn);
+                cn.Open();
                 SqlCommand cmd = new SqlCommand("[dbo].[sp_Get_PrData]", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@PRID", Txt_se_pr.Text);

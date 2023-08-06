@@ -138,6 +138,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="log\logfile.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -207,6 +208,18 @@
       <DependentUpon>Grndoc.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ReportDocs\MaterialRequisition.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialRequisition.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDocs\Mrdoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mrdoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ReportDocs\Prep.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -253,7 +266,15 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="ReportDocs\Grndoc.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Grndoc.cs</LastGenOutput>
+      <LastGenOutput>Grndoc1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocs\MaterialRequisition.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MaterialRequisition.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDocs\Mrdoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Mrdoc.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportDocs\Prep.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
